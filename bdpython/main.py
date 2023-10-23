@@ -5,7 +5,7 @@ try:
     cursor = sqlite_connection.cursor()
     print("База данных подключена к SQLite")
 
-    # Создаем таблицу для собак
+    # Создаем таблицу для собака
     create_dogs_table_query = '''
     CREATE TABLE IF NOT EXISTS Dogs (
         ID INTEGER PRIMARY KEY,
@@ -49,4 +49,4 @@ except sqlite3.Error as error:
 finally:
     if sqlite_connection:
         sqlite_connection.close()
-        print("Соединение с SQLite закрыто")
+        print("Соединение с SQLite закрыт")
