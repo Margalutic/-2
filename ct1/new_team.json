@@ -1,0 +1,25 @@
+new_team = {
+    "squadName": "New Super Team",
+    "homeTown": "Cityville",
+    "formed": 2023,
+    "secretBase": "Super Hideout",
+    "active": True,
+    "members": [
+        {
+            "name": "Super Kid",
+            "age": 18,
+            "secretIdentity": "Timmy Johnson",
+            "powers": ["Flight", "Super strength"]
+        },
+        {
+            "name": "Lightning Lass",
+            "age": 25,
+            "secretIdentity": "Linda Sparks",
+            "powers": ["Electricity control", "Speed"]
+        }
+    ]
+}
+
+# Сохранить новую команду в JSON файл
+with open('new_team.json', 'w') as json_file:
+    json.dump(new_team, json_file, indent=4)
