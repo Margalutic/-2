@@ -5,7 +5,7 @@ try:
     cursor = sqlite_connection.cursor()
     print("База данных подключена к SQLite")
 
-    # Создаем таблицу для собака
+
     create_dogs_table_query = '''
     CREATE TABLE IF NOT EXISTS Dogs (
         ID INTEGER PRIMARY KEY,
@@ -18,7 +18,7 @@ try:
     cursor.execute(create_dogs_table_query)
     print("Таблица собак создана")
 
-    # Создаем таблицу для питомников
+
     create_kennels_table_query = '''
     CREATE TABLE IF NOT EXISTS Kennels (
         ID INTEGER PRIMARY KEY,
@@ -29,7 +29,7 @@ try:
     cursor.execute(create_kennels_table_query)
     print("Таблица питомников создана")
 
-    # Создаем таблицу для потенциальных покупателей
+
     create_buyers_table_query = '''
     CREATE TABLE IF NOT EXISTS Buyers (
         ID INTEGER PRIMARY KEY,
@@ -39,7 +39,7 @@ try:
     );
     '''
     cursor.execute(create_buyers_table_query)
-    print("Таблица потенциальных покупателей создана")
+    print("Таблица потенциальныx покупателей создана")
 
     sqlite_connection.commit()
     cursor.close()
